@@ -1,0 +1,12 @@
+<h1>Your contacts are as follows:</h1>
+  <div>
+    <% @contacts.each do |contact| %>
+      <div>
+        <p><%= contact.first_name %> <%= contact.last_name %></p>
+      </div>
+        <p><%= contact.email %></p>
+        <p><%= contact.phone_number %></p>
+        <p><a href="/contacts/<%= contact.id%>/edit">Want to edit this contact? Click here!</a>
+        <% end %>
+
+  </div>

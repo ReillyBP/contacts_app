@@ -1,0 +1,9 @@
+<%= form_tag "/contacts", method: :post do %>
+<div> First Name: <input type= "text" name="first_name_param">
+<div>Last Name: <input type= "text" name="last_name_param">
+<div>Email:<input type= "text" name="email_param">
+<div>Phone Number: <input type= "text" name="phone_number_param">
+<input type= "submit" value="Create New Contact">
+<%end%>
+
+<a href="/contacts"> Back to homepage</a>
